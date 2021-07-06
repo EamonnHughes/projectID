@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playermove : MonoBehaviour
+public class PlayerMove : MonoBehaviour
 {
    float jumpPower = 3;
     Rigidbody body;

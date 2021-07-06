@@ -322,10 +322,10 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/VSSettingsProvider.ref.dll"
-"Assets/scripts/enemyai.cs"
-"Assets/scripts/facemouse.cs"
-"Assets/scripts/follow.cs"
-"Assets/scripts/playermove.cs"
+"Assets/scripts/CamFollow.cs"
+"Assets/scripts/EnemyAI.cs"
+"Assets/scripts/FaceMouse.cs"
+"Assets/scripts/PlayerMove.cs"
 -langversion:8.0
 
 /deterministic
