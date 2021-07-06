@@ -325,7 +325,9 @@
 "Assets/scripts/CamFollow.cs"
 "Assets/scripts/EnemyAI.cs"
 "Assets/scripts/FaceMouse.cs"
+"Assets/scripts/HealthBar.cs"
 "Assets/scripts/PlayerMove.cs"
+"Assets/scripts/StaminaBar.cs"
 -langversion:8.0
 
 /deterministic
