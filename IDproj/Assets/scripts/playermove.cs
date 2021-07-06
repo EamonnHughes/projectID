@@ -26,9 +26,9 @@ void Update()
 if (Input.GetKey(KeyCode.W)){
             transform.Translate((Vector3.forward * 4) * Time.deltaTime);}
             //dash
-if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift)){
+if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift) && StaminaBar.instance.currentStamina >= 1){
 body.AddForce(transform.forward*dashSpeed * Time.deltaTime, ForceMode.Impulse);
-   StaminaBar.instance.UseStamina(5);
+   StaminaBar.instance.UseStamina(1);
 }
 if (Input.GetKey(KeyCode.S)){
             transform.Translate((Vector3.back * 4) * Time.deltaTime);}
@@ -36,7 +36,7 @@ if (Input.GetKey(KeyCode.A)){
             transform.Translate((Vector3.left * 4) * Time.deltaTime);}
 if (Input.GetKey(KeyCode.D)){
             transform.Translate((Vector3.right * 4) * Time.deltaTime);}
-            if (Input.GetKeyDown(KeyCode.Space) && grounded == true){
+            if (Input.GetKeyDown(KeyCode.Space) && grounded == true && StaminaBar.instance.currentStamina >= 5){
             body.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
             StaminaBar.instance.UseStamina(5);
             }

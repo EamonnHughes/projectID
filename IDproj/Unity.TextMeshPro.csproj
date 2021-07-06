@@ -44,7 +44,7 @@
      <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_CharacterInfo.cs" />
      <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_StyleSheet.cs" />
      <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_FontAssetUtilities.cs" />
-     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMPro_UGUI_Private.cs" />
+     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMPro_UGUI_public.cs" />
      <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_Dropdown.cs" />
      <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_Text.cs" />
      <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_SelectionCaret.cs" />
@@ -90,7 +90,7 @@
      <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_Compatibility.cs" />
      <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_TextParsingUtilities.cs" />
      <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_DefaultControls.cs" />
-     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMPro_Private.cs" />
+     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMPro_public.cs" />
      <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_ShaderUtilities.cs" />
      <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_ScrollbarEventHandler.cs" />
      <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_FontFeatureTable.cs" />

@@ -27,13 +27,13 @@ public class EnemyAI : MonoBehaviour
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
-    private void Awake()
+    public void Awake()
     {
     player = GameObject.Find("Player").transform;
     agent = GetComponent<NavMeshAgent>();    
     }
 
-    private void Update()
+    public void Update()
     {
         //Check for sight and attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
@@ -44,7 +44,7 @@ public class EnemyAI : MonoBehaviour
         if(playerInSightRange && playerInAttackRange) AttackPlayer();
     }
 
-    private void Patroling(){
+    public void Patroling(){
         if (!walkPointSet) searchWalkPoint();
 
         if (walkPointSet)
@@ -55,7 +55,7 @@ public class EnemyAI : MonoBehaviour
         if (distanceToWalkPoint.magnitude < 1f)
         walkPointSet = false;
     }
-    private void searchWalkPoint(){
+    public void searchWalkPoint(){
         float randomZ = Random.Range(-walkPointRange, walkPointRange);
         float randomX = Random.Range(-walkPointRange, walkPointRange);
 
@@ -65,11 +65,11 @@ public class EnemyAI : MonoBehaviour
         walkPointSet = true;
     }
 
-     private void ChasePlayer(){
+     public void ChasePlayer(){
         agent.SetDestination(player.position);
     }
 
-     private void AttackPlayer(){
+     public void AttackPlayer(){
         agent.SetDestination(transform.position);
 
         transform.LookAt(player);
@@ -86,7 +86,7 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    private void ResetAttack()
+    public void ResetAttack()
     {
         alreadyAttacked = false;
     }
@@ -97,7 +97,7 @@ public class EnemyAI : MonoBehaviour
 
         if (health <= 0) Invoke(nameof(DestroyEnemy), .5f);
     }
-    private void DestroyEnemy()
+    public void DestroyEnemy()
     {
         Destroy(gameObject);
     }

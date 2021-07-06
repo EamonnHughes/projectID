@@ -8,12 +8,12 @@ using UnityEngine.UI;
 public class StaminaBar : MonoBehaviour
 {
 public Slider staminaBar;
-private int maxStamina = 20;
-private int currentStamina;
+public int maxStamina = 20;
+public int currentStamina;
 public static StaminaBar instance;
-private Coroutine regen;
+public Coroutine regen;
 
-private void Awake()
+public void Awake()
 {
     instance = this;
 }
@@ -39,7 +39,7 @@ private void Awake()
         }
     }
 
-    private IEnumerator RegenStam(){
+    public IEnumerator RegenStam(){
 yield return new WaitForSeconds(2);
 while(currentStamina < maxStamina){
     currentStamina += maxStamina/20;
