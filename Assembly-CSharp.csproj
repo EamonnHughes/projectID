@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{a24342ea-2e01-5734-4f38-4b0e6b976bce}</ProjectGuid>
+    <ProjectGuid>{c11014e9-e606-2819-b091-cfcf2b5b14b9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -274,10 +274,10 @@
         <HintPath>/Users/eamonn/Documents/2021.1.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>/Users/eamonn/Documents/GitHub/projectID/IDproj/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+        <HintPath>/Users/eamonn/Documents/GitHub/projectID/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>/Users/eamonn/Documents/GitHub/projectID/IDproj/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+        <HintPath>/Users/eamonn/Documents/GitHub/projectID/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>/Users/eamonn/Documents/2021.1.12f1/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -636,71 +636,71 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj">
-      <Project>{28e8fc96-c8be-2a03-0e29-24aff525b49d}</Project>
+      <Project>{9a2a8156-2f00-8827-b366-cd4a5a5bebb7}</Project>
       <Name>Unity.VisualScripting.Flow.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{e226962d-cc84-bf4e-a6c9-0b016bd0c9a3}</Project>
+      <Project>{7e0b47cf-0672-cf7e-a4d7-3f3ce7cf57d9}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{c71a6ed3-64dd-d928-b451-7b3cf40de1b9}</Project>
+      <Project>{f4ea77f7-d971-890f-6705-682dbb106a76}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{21b1a2a3-c7d8-5f75-78e8-5e8b996c31a3}</Project>
+      <Project>{d51984b3-b6d9-8665-5478-85d487d99f2a}</Project>
       <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{db4ded80-7f0f-287d-fcd7-e1e2095c5c73}</Project>
+      <Project>{6a0ae791-ed83-fe6a-4c0b-81c0d1d74aa4}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{9c96c64e-2306-095f-955f-30e3978031a3}</Project>
+      <Project>{fbddff24-b2bc-8ed0-1b0d-c32c3310e99c}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
-      <Project>{964cafa3-4523-e167-d27a-3745afb05e5c}</Project>
+      <Project>{7fa371f4-19d6-8486-2236-42ca1f90feda}</Project>
       <Name>Unity.VisualScripting.Core.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{7d5e360b-89c5-ed6f-de9d-25a3bde09076}</Project>
+      <Project>{80893cfd-b258-d184-cc35-19deee3d3655}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj">
-      <Project>{4b69f860-9d59-3d3a-57c4-4b28ecd0b9eb}</Project>
+      <Project>{8b68c4d3-13f9-cc90-d2dc-365d6375c20a}</Project>
       <Name>Unity.VisualScripting.State.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="VSSettingsProvider.csproj">
-      <Project>{c74c7079-8d33-d5b2-dcee-2e94afbee25b}</Project>
+      <Project>{14980617-6773-7e9b-2cc1-c763cbdf7312}</Project>
       <Name>VSSettingsProvider</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
-      <Project>{6e2c6f9b-8163-078a-b1bb-f1bfbd7ca949}</Project>
+      <Project>{e21803f7-c205-23bd-3c77-1a7db36cbc0d}</Project>
       <Name>Unity.VisualScripting.Flow</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{0c72ede3-293c-ce7d-0a28-49a93de9c704}</Project>
+      <Project>{8afb3a27-3046-a4d2-e12f-85205a24ed00}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{ab6799e2-e15b-31b6-478f-5763967ae5dc}</Project>
+      <Project>{06cfcbb7-d3ea-8453-bfb0-5a567456b9dd}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{5cfa0273-d4e1-1c4c-e7b0-ced784668b20}</Project>
+      <Project>{de734aa2-99be-8b00-6c02-0ff5f855465e}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{a5d38733-db6b-826c-5e22-09a6327ed9e6}</Project>
+      <Project>{fbb354e8-96bb-ea96-2164-403c1646bf32}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
-      <Project>{fc241afe-a5f3-2477-0221-2a5165a78215}</Project>
+      <Project>{320d7261-934d-5057-b7b2-a8b017b4a151}</Project>
       <Name>Unity.VisualScripting.State</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.csproj">
-      <Project>{60e4b78e-66ab-787d-dbc0-407d42e040be}</Project>
+      <Project>{aa8b37ac-b81b-7fe9-c5d1-05eb2f59536e}</Project>
       <Name>Unity.VisualScripting.Core</Name>
     </ProjectReference>
   </ItemGroup>

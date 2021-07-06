@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5cfa0273-d4e1-1c4c-e7b0-ced784668b20}</ProjectGuid>
+    <ProjectGuid>{de734aa2-99be-8b00-6c02-0ff5f855465e}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Rider.Editor</AssemblyName>
@@ -325,7 +325,7 @@
         <HintPath>/Users/eamonn/Documents/2021.1.12f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>/Users/eamonn/Documents/GitHub/projectID/IDproj/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+        <HintPath>/Users/eamonn/Documents/GitHub/projectID/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>/Users/eamonn/Documents/2021.1.12f1/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -687,19 +687,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{c30764e5-ee04-37cc-a3f6-6f4e20214fec}</Project>
+      <Project>{099e6ee9-9810-b710-ba38-009ad78e7ab5}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{61d23af3-5edf-55b9-e163-95ecaa5b54d2}</Project>
+      <Project>{9e004de2-6485-9d8e-881f-f2d6d3f920b2}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{0c72ede3-293c-ce7d-0a28-49a93de9c704}</Project>
+      <Project>{8afb3a27-3046-a4d2-e12f-85205a24ed00}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{a5d38733-db6b-826c-5e22-09a6327ed9e6}</Project>
+      <Project>{fbb354e8-96bb-ea96-2164-403c1646bf32}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>
