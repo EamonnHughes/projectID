@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VSCode.Editor", "Unit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEditor.UI", "UnityEditor.UI.csproj", "{8afb3a27-3046-a4d2-e12f-85205a24ed00}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{d19bf2ad-d25c-fa2f-606c-166227101ed0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -90,6 +92,8 @@ Global
 		{7e0b47cf-0672-cf7e-a4d7-3f3ce7cf57d9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8afb3a27-3046-a4d2-e12f-85205a24ed00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8afb3a27-3046-a4d2-e12f-85205a24ed00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{d19bf2ad-d25c-fa2f-606c-166227101ed0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{d19bf2ad-d25c-fa2f-606c-166227101ed0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
