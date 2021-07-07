@@ -29,8 +29,8 @@ public class EnemyAI : MonoBehaviour
 
     public void Awake()
     {
-    player = GameObject.Find("Player").transform;
-    agent = GetComponent<NavMeshAgent>();    
+        player = GameObject.Find("Player").transform;
+        agent = GetComponent<NavMeshAgent>();
     }
 
     public void Update()
@@ -39,37 +39,41 @@ public class EnemyAI : MonoBehaviour
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
 
-        if(!playerInSightRange && !playerInAttackRange) Patroling();
-        if(playerInSightRange && !playerInAttackRange) ChasePlayer();
-        if(playerInSightRange && playerInAttackRange) AttackPlayer();
+        if (!playerInSightRange && !playerInAttackRange) Patroling();
+        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
+        if (playerInSightRange && playerInAttackRange) AttackPlayer();
     }
 
-    public void Patroling(){
+    public void Patroling()
+    {
         if (!walkPointSet) searchWalkPoint();
 
         if (walkPointSet)
-        agent.SetDestination(walkPoint);
+            agent.SetDestination(walkPoint);
 
-        Vector3 distanceToWalkPoint = transform.position-walkPoint;
+        Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
         if (distanceToWalkPoint.magnitude < 1f)
-        walkPointSet = false;
+            walkPointSet = false;
     }
-    public void searchWalkPoint(){
+    public void searchWalkPoint()
+    {
         float randomZ = Random.Range(-walkPointRange, walkPointRange);
         float randomX = Random.Range(-walkPointRange, walkPointRange);
 
-        walkPoint  = new Vector3(transform.position.x+randomX, transform.position.y, transform.position.x+randomZ);
+        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.x + randomZ);
 
         if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround))
-        walkPointSet = true;
+            walkPointSet = true;
     }
 
-     public void ChasePlayer(){
+    public void ChasePlayer()
+    {
         agent.SetDestination(player.position);
     }
 
-     public void AttackPlayer(){
+    public void AttackPlayer()
+    {
         agent.SetDestination(transform.position);
 
         transform.LookAt(player);
