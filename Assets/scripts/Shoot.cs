@@ -8,6 +8,7 @@ public class Shoot : MonoBehaviour
     float timeBetweenShots = 0.2f;
     float timeNextShot;
     public GameObject bullet;
+        public AudioSource shootSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,12 +22,18 @@ public class Shoot : MonoBehaviour
         {
             canFire = true;
         }
-        if (Input.GetKey(KeyCode.Mouse0) && canFire)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && canFire)
         {
             Instantiate(bullet, this.transform.position, this.transform.rotation);
             timeNextShot = Time.time + timeBetweenShots;
             canFire = false;
         }
 
-    }
+    if (Input.GetButtonDown("Fire1")){
+ playSoundEffect();     
+  } 
+   }
+  public void playSoundEffect(){
+      shootSound.Play();
+  }
 }
