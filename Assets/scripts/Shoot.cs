@@ -5,7 +5,7 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
     bool canFire = true;
-    float timeBetweenShots = 3f;
+    float timeBetweenShots = 0.2f;
     float timeNextShot;
     public GameObject bullet;
     // Start is called before the first frame update
@@ -21,7 +21,7 @@ public class Shoot : MonoBehaviour
         {
             canFire = true;
         }
-        if (Input.GetKeyDown(KeyCode.Mouse0) && canFire)
+        if (Input.GetKey(KeyCode.Mouse0) && canFire)
         {
             Instantiate(bullet, this.transform.position, this.transform.rotation);
             timeNextShot = Time.time + timeBetweenShots;
