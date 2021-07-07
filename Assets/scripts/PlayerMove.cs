@@ -14,6 +14,7 @@ public class PlayerMove : MonoBehaviour
 
     public float runSpeed = 20.0f;
     public float dodgeSpeed;
+    public AudioSource walkSound;
 
     void Start()
     {
@@ -26,24 +27,30 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate((Vector3.forward * 4) * Time.deltaTime);
+             playSoundEffect();     
         }
         //dash
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift) && StaminaBar.instance.currentStamina >= 1)
         {
             body.AddForce(transform.forward * dashSpeed * Time.deltaTime, ForceMode.Impulse);
             StaminaBar.instance.UseStamina(1);
+            
         }
         if (Input.GetKey(KeyCode.S))
         {
             transform.Translate((Vector3.back * 4) * Time.deltaTime);
+             playSoundEffect();     
         }
         if (Input.GetKey(KeyCode.A))
         {
             transform.Translate((Vector3.left * 4) * Time.deltaTime);
+             playSoundEffect();     
         }
         if (Input.GetKey(KeyCode.D))
+        
         {
             transform.Translate((Vector3.right * 4) * Time.deltaTime);
+             playSoundEffect();     
         }
         if (Input.GetKeyDown(KeyCode.Space) && grounded == true && StaminaBar.instance.currentStamina >= 5)
         {
@@ -81,4 +88,7 @@ public class PlayerMove : MonoBehaviour
             grounded = false;
         }
     }
+      public void playSoundEffect(){
+      walkSound.Play();
+  }
 }
