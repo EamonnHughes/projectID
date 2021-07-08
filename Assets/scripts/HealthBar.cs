@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-        public Slider healthBar;
+    public Slider healthBar;
     public int maxHealth = 20;
     public int currentHealth;
     public static HealthBar instance;
@@ -13,22 +13,25 @@ public class HealthBar : MonoBehaviour
 
     // Start is called before the first frame update
     void Awake()
-        {
+    {
         currentHealth = maxHealth;
         instance = this;
-        }  
+    }
 
     // Update is called once per frame
     void Update()
     {
 
     }
-    public void TakeDamage(int amount){
+    public void TakeDamage(int amount)
+    {
         if (currentHealth - amount > 0)
         {
-                 healthBar.value = currentHealth;
+            healthBar.value = currentHealth;
             currentHealth -= amount;
-        }else{
+        }
+        else
+        {
             Debug.Log("GameOver");
         }
     }
