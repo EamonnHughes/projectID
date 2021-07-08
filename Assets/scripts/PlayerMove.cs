@@ -13,6 +13,8 @@ public class PlayerMove : MonoBehaviour
     public float runSpeed = 20.0f;
     public float dodgeSpeed;
     public AudioSource walkSound;
+    Vector3 leftr = new Vector3(0, -50, 0);
+    Vector3 rightr = new Vector3(0, 50, 0);
 
     void Start()
     {
@@ -42,25 +44,14 @@ public class PlayerMove : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate((Vector3.left * 4) * Time.deltaTime);
+            transform.Rotate(leftr * Time.deltaTime);
             playSoundEffect();
         }
         if (Input.GetKey(KeyCode.D))
-
-        {
-            transform.Translate((Vector3.right * 4) * Time.deltaTime);
+        {            
+            transform.Rotate(rightr * Time.deltaTime);
             playSoundEffect();
         }
-        //if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift) && StaminaBar.instance.currentStamina >= 1)
-        //{
-        //   body.AddForce(Vector3.left * dashSpeed * Time.deltaTime, ForceMode.Impulse);
-        //    StaminaBar.instance.UseStamina(1);
-        // }
-        //  if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift) && StaminaBar.instance.currentStamina >= 1)
-        // {
-        //    body.AddForce(Vector3.right * dashSpeed * Time.deltaTime, ForceMode.Impulse);
-        //   StaminaBar.instance.UseStamina(1);
-        //}
         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift) && StaminaBar.instance.currentStamina >= 1)
         {
             body.AddForce(Vector3.left * dashSpeed * Time.deltaTime, ForceMode.Impulse);
