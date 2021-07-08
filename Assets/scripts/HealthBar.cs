@@ -25,14 +25,10 @@ public class HealthBar : MonoBehaviour
     }
     public void TakeDamage(int amount)
     {
-        if (currentHealth - amount > 0)
+        if (currentHealth - amount > -1)
         {
             healthBar.value = currentHealth;
             currentHealth -= amount;
-        }
-        else
-        {
-            Debug.Log("GameOver");
         }
     }
 }

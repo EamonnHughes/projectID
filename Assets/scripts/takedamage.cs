@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class spawn : MonoBehaviour
+public class takedamage : MonoBehaviour
 {
-    public GameObject enemy;
+        Rigidbody body;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,12 +15,13 @@ public class spawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-
+        
     }
-    public IEnumerator spawner(){
-        Instantiate(enemy, transform.position, Quaternion.identity);
-        yield return new WaitForSeconds(5);
+
+    void OnCollisionEnter(Collision collision)
+    {
+    if(collision.gameObject.tag == "prokectile"){
+        HealthBar.instance.TakeDamage(1);
+    }    
     }
 }

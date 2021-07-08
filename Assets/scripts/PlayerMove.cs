@@ -28,7 +28,7 @@ public class PlayerMove : MonoBehaviour
         {
             transform.Translate((Vector3.forward * 4) * Time.deltaTime);
             playSoundEffect();
-
+            
         }
         //dash
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift) && StaminaBar.instance.currentStamina >= 1)
@@ -41,6 +41,7 @@ public class PlayerMove : MonoBehaviour
         {
             transform.Translate((Vector3.back * 4) * Time.deltaTime);
             playSoundEffect();
+    
         }
         if (Input.GetKey(KeyCode.A))
         {
