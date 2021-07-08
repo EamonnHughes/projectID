@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    float jumpPower = 3;
     Rigidbody body;
-    bool grounded = true;
 
     float horizontal;
     float vertical;
@@ -53,12 +51,6 @@ public class PlayerMove : MonoBehaviour
             transform.Translate((Vector3.right * 4) * Time.deltaTime);
              playSoundEffect();     
         }
-        if (Input.GetKeyDown(KeyCode.Space) && grounded == true && StaminaBar.instance.currentStamina >= 5)
-        {
-            body.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
-            StaminaBar.instance.UseStamina(5);
-        }
-
         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift) && StaminaBar.instance.currentStamina >= 1)
         {
             body.AddForce(Vector3.left * dashSpeed * Time.deltaTime, ForceMode.Impulse);
@@ -75,20 +67,7 @@ public class PlayerMove : MonoBehaviour
             StaminaBar.instance.UseStamina(1);
         }
     }
-    void OnTriggerEnter(Collider theCollision)
-    {
-        if (theCollision.gameObject.CompareTag("ground"))
-        {
-            grounded = true;
-        }
-    }
-    void OnTriggerExit(Collider theCollision)
-    {
-        if (theCollision.gameObject.CompareTag("ground"))
-        {
-            grounded = false;
-        }
-    }
+
       public void playSoundEffect(){
       walkSound.Play();
   }
