@@ -51,11 +51,6 @@ public class PlayerMove : MonoBehaviour
             transform.Translate((Vector3.right * 4) * Time.deltaTime);
             playSoundEffect();
         }
-        if (Input.GetKeyDown(KeyCode.Space) && grounded == true && StaminaBar.instance.currentStamina >= 5)
-        {
-            body.AddForce(Vector3.up * jumpPower, ForceMode.Impulse);
-            StaminaBar.instance.UseStamina(5);
-        }
 
         //if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift) && StaminaBar.instance.currentStamina >= 1)
         //{
@@ -83,27 +78,9 @@ public class PlayerMove : MonoBehaviour
             StaminaBar.instance.UseStamina(1);
         }
     }
-    void OnTriggerEnter(Collider theCollision)
-    {
-        if (theCollision.gameObject.CompareTag("ground"))
-        {
-            grounded = true;
-        }
-    }
-    void OnTriggerExit(Collider theCollision)
-    {
-        if (theCollision.gameObject.CompareTag("ground"))
-        {
-            grounded = false;
-        }
-    }
     public void playSoundEffect()
     {
         walkSound.Play();
     }
 
-    public void playSoundEffect()
-    {
-        walkSound.Play();
-    }
 }

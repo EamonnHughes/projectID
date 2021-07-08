@@ -11,7 +11,7 @@ public class EnemyAI : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer;
 
     public float health;
-            public AudioSource shootSound;
+    public AudioSource shootSound;
 
 
     //patrol
@@ -81,7 +81,7 @@ public class EnemyAI : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-             playSoundEffect();
+            playSoundEffect();
             Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
@@ -103,8 +103,9 @@ public class EnemyAI : MonoBehaviour
     {
         Destroy(gameObject);
     }
-      public void playSoundEffect(){
-      shootSound.Play();
-  }
+    public void playSoundEffect()
+    {
+        shootSound.Play();
+    }
 
 }
