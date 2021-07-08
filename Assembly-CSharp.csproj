@@ -58,6 +58,7 @@
      <Compile Include="Assets\scripts\PlayerMove.cs" />
      <Compile Include="Assets\scripts\EnemyAI.cs" />
      <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
+     <Compile Include="Assets\scripts\shootfx.cs" />
      <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft.shader" />
      <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Multiply Soft Scroll.shader" />
      <None Include="Assets\JMO Assets\WarFX\_Effects\MuzzleFlashes\!MuzzleFlash Differences.txt" />
@@ -675,6 +676,10 @@
       <Project>{7e0b47cf-0672-cf7e-a4d7-3f3ce7cf57d9}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
+      <Project>{38abb2e6-c4b3-6842-f283-00f074519665}</Project>
+      <Name>Unity.Postprocessing.Runtime</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.ProBuilder.AssetIdRemapUtility.csproj">
       <Project>{b617db81-b76b-33d8-f12b-ba0422e957a5}</Project>
       <Name>Unity.ProBuilder.AssetIdRemapUtility</Name>
@@ -723,13 +728,13 @@
       <Project>{7558c946-cade-d6e5-42a1-5e6f1abb8937}</Project>
       <Name>Unity.ProBuilder.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
+      <Project>{8810cc57-f457-c664-01a0-5af85de010d0}</Project>
+      <Name>Unity.Postprocessing.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{8afb3a27-3046-a4d2-e12f-85205a24ed00}</Project>
       <Name>UnityEditor.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
-      <Project>{06cfcbb7-d3ea-8453-bfb0-5a567456b9dd}</Project>
-      <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
       <Project>{de734aa2-99be-8b00-6c02-0ff5f855465e}</Project>
@@ -743,6 +748,10 @@
       <Project>{fbb354e8-96bb-ea96-2164-403c1646bf32}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
+      <Project>{06cfcbb7-d3ea-8453-bfb0-5a567456b9dd}</Project>
+      <Name>Unity.PlasticSCM.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
       <Project>{320d7261-934d-5057-b7b2-a8b017b4a151}</Project>
       <Name>Unity.VisualScripting.State</Name>
@@ -750,14 +759,6 @@
     <ProjectReference Include="Unity.VisualScripting.Core.csproj">
       <Project>{aa8b37ac-b81b-7fe9-c5d1-05eb2f59536e}</Project>
       <Name>Unity.VisualScripting.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
-      <Project>{8810cc57-f457-c664-01a0-5af85de010d0}</Project>
-      <Name>Unity.Postprocessing.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
-      <Project>{38abb2e6-c4b3-6842-f283-00f074519665}</Project>
-      <Name>Unity.Postprocessing.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
