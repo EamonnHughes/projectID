@@ -5,25 +5,34 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    public HealthBar playerHealth;
-    public Image fillImage;
-    private Slider slider;
-    public int currentHealth;
+    public Slider healthBar;
     public int maxHealth = 20;
+    public int currentHealth;
+    public static HealthBar instance;
 
 
     // Start is called before the first frame update
     void Awake()
     {
-        playerHealth = this;
-        slider = GetComponent<Slider>();
         currentHealth = maxHealth;
+        instance = this;
     }
 
     // Update is called once per frame
     void Update()
     {
-        float fillValue = playerHealth.currentHealth / playerHealth.maxHealth;
-        slider.value = fillValue;
+
+    }
+    public void TakeDamage(int amount)
+    {
+        if (currentHealth - amount > 0)
+        {
+            healthBar.value = currentHealth;
+            currentHealth -= amount;
+        }
+        else
+        {
+            Debug.Log("GameOver");
+        }
     }
 }

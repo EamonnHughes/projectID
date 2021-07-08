@@ -412,9 +412,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62f652102b3d461ca85dbe2e4b9bebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fillImage: {fileID: 5085125318718028842}
-  currentHealth: 15
+  healthBar: {fileID: 4260963576442607162}
   maxHealth: 20
+  currentHealth: 15
 --- !u!1 &6007965863301621364
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,7 +595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   staminaBar: {fileID: 5843891496532779542}
-  maxStamina: 20
+  maxStamina: 80
   currentStamina: 0
 --- !u!1 &6534913742240201591
 GameObject:

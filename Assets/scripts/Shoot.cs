@@ -27,6 +27,7 @@ public class Shoot : MonoBehaviour
             Instantiate(bullet, this.transform.position, this.transform.rotation);
             timeNextShot = Time.time + timeBetweenShots;
             canFire = false;
+            
         }
 
     if (Input.GetButtonDown("Fire1")){
