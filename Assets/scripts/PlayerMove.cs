@@ -12,6 +12,8 @@ public class PlayerMove : MonoBehaviour
 
     public float dashSpeed;
 
+    public float rotateSpeed = 2.0f;
+
     public float runSpeed = 20.0f;
 
     public float dodgeSpeed;
@@ -58,12 +60,12 @@ public class PlayerMove : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(leftr * Time.deltaTime);
+            transform.Rotate(leftr * Time.deltaTime * rotateSpeed);
             playSoundEffect();
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(rightr * Time.deltaTime);
+            transform.Rotate(rightr * Time.deltaTime * rotateSpeed);
             playSoundEffect();
         }
 
