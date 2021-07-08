@@ -13,10 +13,10 @@ public class HealthBar : MonoBehaviour
 
     // Start is called before the first frame update
     void Awake()
-    {
+        {
         currentHealth = maxHealth;
         instance = this;
-    }
+        }  
 
     // Update is called once per frame
     void Update()
