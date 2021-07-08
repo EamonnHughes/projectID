@@ -595,7 +595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   staminaBar: {fileID: 5843891496532779542}
-  maxStamina: 20
+  maxStamina: 80
   currentStamina: 0
 --- !u!1 &6534913742240201591
 GameObject:
