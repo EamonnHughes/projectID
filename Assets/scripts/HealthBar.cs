@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    public static HealthBar playerHealth;
+    public HealthBar playerHealth;
     public Image fillImage;
     private Slider slider;
     public int currentHealth;
