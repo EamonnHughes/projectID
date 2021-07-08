@@ -18,10 +18,5 @@ public class takedamage : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-    if(collision.gameObject.tag == "prokectile"){
-        HealthBar.instance.TakeDamage(1);
-    }    
-    }
+    
 }

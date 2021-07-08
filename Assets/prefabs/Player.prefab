@@ -532,6 +532,7 @@ GameObject:
   - component: {fileID: 7024294402874302824}
   - component: {fileID: 2250201644029742560}
   - component: {fileID: 212232897644931203}
+  - component: {fileID: 2306771411005156895}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -615,8 +616,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.8430786, y: 2.3665771, z: 1.2358704}
+  m_Center: {x: -0.14581299, y: 0.6832886, z: 0.11793518}
 --- !u!114 &7024294402874302824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,6 +662,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb38816cb120442319308ebe2ef8ba70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2306771411005156895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4515027852606545225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c62f652102b3d461ca85dbe2e4b9bebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  maxHealth: 20
+  currentHealth: 0
 --- !u!1 &4585166609269768609
 GameObject:
   m_ObjectHideFlags: 0
