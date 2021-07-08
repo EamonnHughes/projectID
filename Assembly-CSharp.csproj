@@ -49,10 +49,8 @@
      <Compile Include="Assets\scripts\collisionsPlayer.cs" />
      <Compile Include="Assets\scripts\shootfx.cs" />
      <Compile Include="Assets\scripts\TurretMove.cs" />
-     <Compile Include="Assets\scripts\Health.cs" />
      <Compile Include="Assets\scripts\hitenemy.cs" />
      <Compile Include="Assets\scripts\takedamage.cs" />
-     <Compile Include="Assets\hitenemy.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Users/enda/2021.1.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
