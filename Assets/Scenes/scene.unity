@@ -129,7 +129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-49876
+  m_Name: pb_Mesh53278
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -581,7 +581,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e81a29855d26f4ebe862d21bee21c554, type: 2}
+  - {fileID: 2100000, guid: 88f3d751548794894bca218d8c1a7bcf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
