@@ -42,6 +42,11 @@
      <Compile Include="Assets\scripts\FaceMouse.cs" />
      <Compile Include="Assets\scripts\PlayerMove.cs" />
      <Compile Include="Assets\scripts\EnemyAI.cs" />
+     <Compile Include="Assets\scripts\shootfx.cs" />
+     <Compile Include="Assets\scripts\spawn.cs" />
+     <Compile Include="Assets\scripts\collisionsPlayer.cs" />
+     <Compile Include="Assets\scripts\TurretMove.cs" />
+     <Compile Include="Assets\scripts\Health.cs" />
      <Compile Include="Assets\scripts\Shoot.cs" />
      <Compile Include="Assets\scripts\ForceMove.cs" />
      <Compile Include="Assets\scripts\Health.cs" />

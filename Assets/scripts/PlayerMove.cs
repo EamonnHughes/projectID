@@ -13,6 +13,8 @@ public class PlayerMove : MonoBehaviour
     public float runSpeed = 20.0f;
     public float dodgeSpeed;
     public AudioSource walkSound;
+    Vector3 leftr = new Vector3(0, -50, 0);
+    Vector3 rightr = new Vector3(0, 50, 0);
 
     void Start()
     {
@@ -42,13 +44,12 @@ public class PlayerMove : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate((Vector3.left * 4) * Time.deltaTime);
+            transform.Rotate(leftr * Time.deltaTime);
             playSoundEffect();
         }
         if (Input.GetKey(KeyCode.D))
-
         {
-            transform.Translate((Vector3.right * 4) * Time.deltaTime);
+            transform.Rotate(rightr * Time.deltaTime);
             playSoundEffect();
         }
 
