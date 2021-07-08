@@ -63,8 +63,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEditor.UI", "UnityEdit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Settings.Editor", "Unity.Settings.Editor.csproj", "{91cda3e1-6882-3d37-dfd4-5876a0893381}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{d19bf2ad-d25c-fa2f-606c-166227101ed0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.ProBuilder.AddOns.Editor", "Unity.ProBuilder.AddOns.Editor.csproj", "{3bafac02-d62c-b259-623c-e72a25ccb55a}"
 EndProject
 Global
@@ -134,8 +132,6 @@ Global
 		{8afb3a27-3046-a4d2-e12f-85205a24ed00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91cda3e1-6882-3d37-dfd4-5876a0893381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{91cda3e1-6882-3d37-dfd4-5876a0893381}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{d19bf2ad-d25c-fa2f-606c-166227101ed0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{d19bf2ad-d25c-fa2f-606c-166227101ed0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3bafac02-d62c-b259-623c-e72a25ccb55a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3bafac02-d62c-b259-623c-e72a25ccb55a}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection

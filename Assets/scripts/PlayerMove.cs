@@ -27,7 +27,8 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate((Vector3.forward * 4) * Time.deltaTime);
-             playSoundEffect();     
+            playSoundEffect();
+     
         }
         //dash
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift) && StaminaBar.instance.currentStamina >= 1)

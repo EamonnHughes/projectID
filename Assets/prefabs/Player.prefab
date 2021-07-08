@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6851937777507182698}
   - component: {fileID: 9193858766033788780}
   - component: {fileID: 3622412019427545495}
+  - component: {fileID: 1168324205715298505}
   m_Layer: 7
   m_Name: Cubee
   m_TagString: Untagged
@@ -207,6 +208,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1168324205715298505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139247095731124985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561d1a13315e94c888b41c1bd5cbbf51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2888067762824455127
 GameObject:
   m_ObjectHideFlags: 0
