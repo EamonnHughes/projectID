@@ -10,6 +10,8 @@ public class PlayerMove : MonoBehaviour
     float vertical;
     public float dashSpeed;
 
+    public float rotateSpeed = 2.0f;
+
     public float runSpeed = 20.0f;
     public float dodgeSpeed;
     public AudioSource walkSound;
@@ -28,7 +30,7 @@ public class PlayerMove : MonoBehaviour
         {
             transform.Translate((Vector3.forward * 4) * Time.deltaTime);
             playSoundEffect();
-            
+
         }
         //dash
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift) && StaminaBar.instance.currentStamina >= 1)
@@ -41,16 +43,16 @@ public class PlayerMove : MonoBehaviour
         {
             transform.Translate((Vector3.back * 4) * Time.deltaTime);
             playSoundEffect();
-    
+
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(leftr * Time.deltaTime);
+            transform.Rotate(leftr * Time.deltaTime * rotateSpeed);
             playSoundEffect();
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(rightr * Time.deltaTime);
+            transform.Rotate(rightr * Time.deltaTime * rotateSpeed);
             playSoundEffect();
         }
 
