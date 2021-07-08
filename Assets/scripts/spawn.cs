@@ -14,7 +14,7 @@ public class spawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Instantiate(enemy, this.transform.position);
+        //Instantiate(enemy, this.transform.position);
 
     }
 }
