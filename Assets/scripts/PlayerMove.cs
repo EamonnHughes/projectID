@@ -48,10 +48,21 @@ public class PlayerMove : MonoBehaviour
             playSoundEffect();
         }
         if (Input.GetKey(KeyCode.D))
-        {            
+        {
             transform.Rotate(rightr * Time.deltaTime);
             playSoundEffect();
         }
+
+        //if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift) && StaminaBar.instance.currentStamina >= 1)
+        //{
+        //   body.AddForce(Vector3.left * dashSpeed * Time.deltaTime, ForceMode.Impulse);
+        //    StaminaBar.instance.UseStamina(1);
+        // }
+        //  if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.LeftShift) && StaminaBar.instance.currentStamina >= 1)
+        // {
+        //    body.AddForce(Vector3.right * dashSpeed * Time.deltaTime, ForceMode.Impulse);
+        //   StaminaBar.instance.UseStamina(1);
+        //}
         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.LeftShift) && StaminaBar.instance.currentStamina >= 1)
         {
             body.AddForce(Vector3.left * dashSpeed * Time.deltaTime, ForceMode.Impulse);
@@ -68,9 +79,9 @@ public class PlayerMove : MonoBehaviour
             StaminaBar.instance.UseStamina(1);
         }
     }
-
     public void playSoundEffect()
     {
         walkSound.Play();
     }
+
 }
