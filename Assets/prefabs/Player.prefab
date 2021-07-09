@@ -631,7 +631,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dashSpeed: 5
+  rotateSpeed: 2
   runSpeed: 20
+  velocity: 0
   dodgeSpeed: 5
   walkSound: {fileID: 2670200268938412899}
 --- !u!54 &2250201644029742560
@@ -642,13 +644,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4515027852606545225}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 30
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &212232897644931203
 MonoBehaviour:
@@ -918,16 +920,24 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 5ba819236761e4e9497acf3e101a75c6, type: 2}
     - target: {fileID: 1581891848054357867, guid: 6978a999165f348ea842959a46b33f43, type: 3}
-      propertyPath: m_Color.b
+      propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1581891848054357867, guid: 6978a999165f348ea842959a46b33f43, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581891848054357867, guid: 6978a999165f348ea842959a46b33f43, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1581891848054357867, guid: 6978a999165f348ea842959a46b33f43, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1581891848054357867, guid: 6978a999165f348ea842959a46b33f43, type: 3}
+      propertyPath: m_Intensity
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 1581891848054357867, guid: 6978a999165f348ea842959a46b33f43, type: 3}
       propertyPath: m_Shadows.m_Type
