@@ -51,6 +51,7 @@
      <Compile Include="Assets\scripts\PlayerMove.cs" />
      <Compile Include="Assets\scripts\shootfx.cs" />
      <Compile Include="Assets\scripts\EnemyAI.cs" />
+     <Compile Include="Assets\scripts\scenechange.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Users/eamonn/Documents/2021.1.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
