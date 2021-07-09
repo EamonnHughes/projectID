@@ -16,6 +16,8 @@ public class PlayerMove : MonoBehaviour
 
     public float runSpeed = 20.0f;
 
+    public float velocity = 0.0f;
+
     public float dodgeSpeed;
 
     public AudioSource walkSound;
@@ -31,10 +33,51 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKey(KeyCode.W))
+        {
+            if (Input.GetKey(KeyCode.LeftShift) && StaminaBar.instance.currentStamina >= 1)
+            {
+                StaminaBar.instance.UseStamina(1);
+                velocity = velocity + 2.0f;
+            }
+            else
+            {
+                velocity = velocity + 1.0f;
+            }
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            if (Input.GetKey(KeyCode.LeftShift) && StaminaBar.instance.currentStamina >= 1)
+            {
+                StaminaBar.instance.UseStamina(1);
+                velocity = velocity - 2.0f;
+            }
+            else
+            {
+                velocity = velocity - 1.0f;
+            }
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Rotate(leftr * Time.deltaTime * rotateSpeed);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Rotate(rightr * Time.deltaTime * rotateSpeed);
+        }
+
+
+        velocity = velocity - velocity * 0.1f;
+        transform.Translate((Vector3.forward * velocity) * Time.deltaTime);
+
+
+        /*
         Vector3 rotation =
             new Vector3(transform.rotation.eulerAngles.x,
                 transform.rotation.eulerAngles.y + 180,
                 transform.rotation.eulerAngles.z);
+
         if (Input.GetKey(KeyCode.W))
         {
             transform.Translate((Vector3.forward * 4) * Time.deltaTime);
@@ -112,6 +155,7 @@ public class PlayerMove : MonoBehaviour
                 ForceMode.Impulse);
             StaminaBar.instance.UseStamina(1);
         }
+*/
     }
 
     public void playSoundEffect()
