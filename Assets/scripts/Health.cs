@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class Health : MonoBehaviour
         currentHealth -= amount;
         if (currentHealth <= 0)
         {
-            //is dead
+            SceneManager.LoadScene("Menue");
         }
     }
 

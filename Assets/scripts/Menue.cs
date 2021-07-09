@@ -8,7 +8,7 @@ public class Menue : MonoBehaviour
 
     void Start()
     {
-        SceneManager.LoadScene("FirstLevel");
+        SceneManager.LoadScene("scene");
     }
 
 }
