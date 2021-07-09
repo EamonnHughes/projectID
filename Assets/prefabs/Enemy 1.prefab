@@ -485,8 +485,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.8370621, z: 1}
-  m_Center: {x: 0, y: 0.58188224, z: 0}
+  m_Size: {x: 1, y: 11.073941, z: 1}
+  m_Center: {x: 0, y: 5.7003217, z: 0}
 --- !u!195 &3834855664195085756
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -573,7 +573,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.9866005
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
