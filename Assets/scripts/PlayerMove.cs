@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
     Rigidbody body;
+
+    public float threshold = -50f;
 
     float horizontal;
 
@@ -33,6 +36,13 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
+
+        if (transform.position.y < threshold)
+        {
+            SceneManager.LoadScene("Menue");
+        }
+
+
         if (Input.GetKey(KeyCode.W))
         {
             if (Input.GetKey(KeyCode.LeftShift) && StaminaBar.instance.currentStamina >= 1)

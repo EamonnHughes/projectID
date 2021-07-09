@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
     public Slider healthBar;
 
-    public int maxHealth = 20;
+    public int maxHealth = 100;
 
     public int currentHealth;
 
@@ -25,7 +27,7 @@ public class HealthBar : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
-            ;
+            SceneManager.LoadScene("Menue");
         }
     }
 
