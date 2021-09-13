@@ -456,6 +456,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 4260963576442607162, guid: 6acdd397f92ca42ec8b234b6d7efee03, type: 3}
+      propertyPath: m_Value
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4260963576442607162, guid: 6acdd397f92ca42ec8b234b6d7efee03, type: 3}
+      propertyPath: m_MaxValue
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4861153789934542324, guid: 6acdd397f92ca42ec8b234b6d7efee03, type: 3}
       propertyPath: playerHealth
       value: 
@@ -721,6 +729,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1442235332}
+    - target: {fileID: 2306771411005156895, guid: 21c79b9c0d6164c8189aa3864d758914, type: 3}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4515027852606545225, guid: 21c79b9c0d6164c8189aa3864d758914, type: 3}
       propertyPath: m_Name
       value: PLayer
